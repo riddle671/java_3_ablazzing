@@ -17,13 +17,13 @@ package homework.homework1;
             //3. Если содержит "ова " то печатаем на экран: Уважаемая {name}
             // Если содержит "ов " то печатаем на экран: Уважаемый {name}
             // В иных случаях печатаем на экран: Неизвестное лицо {name}
-            String name1 = name.trim().toUpperCase();
+            String nameReplace = name.trim().toUpperCase();
             if (name.contains("ова")) {
-                System.out.println("Уважаемая " + name1);
+                System.out.println("Уважаемая " + nameReplace);
             } else if (name.contains("ов")){
-                System.out.println("Уважаемый " + name1);
+                System.out.println("Уважаемый " + nameReplace);
             } else {
-                System.out.println("Неизвестное лицо " + name1);
+                System.out.println("Неизвестное лицо " + nameReplace);
             }
         }
         public static void ex2() {
@@ -60,6 +60,12 @@ package homework.homework1;
             //Заменить в строке все 'this is' на 'those are', получить индекс (число) второй буквы 'o' в строке
             //Распечатать полученный индекс
             String simply = "this is simply. This is my favorite song.";
+            String simplyReplace = (simply.toLowerCase().replaceAll("this is", "those are"));
+            int value = simplyReplace.indexOf('o');
+            System.out.println(value);
+
+
+
         }
 
         public static void ex4() {
