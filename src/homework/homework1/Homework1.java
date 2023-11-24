@@ -104,9 +104,9 @@ package homework.homework1;
             //Ветчины 8511кг
             //Шейки 6988кг
 
-            int quantitySausage = 1;
-            int quantityHam = 1;
-            int quantityScrag = 1;
+            int quantitySausage = 2000;
+            int quantityHam = 8511;
+            int quantityScrag = 6988;
             int valueSausage = 800;
             int costpriceSausage = 0;
             int valueHam = 311;
@@ -133,10 +133,20 @@ package homework.homework1;
             int incomeSausage = valueSausage * quantitySausage;
             int incomeHam = valueHam * quantityHam;
             int incomeScrag = valueScrag * quantityScrag;
+
             // Расход
-            int consumptionSausage = costpriceSausage * quantitySausage * 1000000;
-            int consumptionHam = costpriceHam * quantityHam * 1000000;
-            int consumptionScrag = costpriceScrag * quantityScrag * 1000000;
+            int consumptionSausage = costpriceSausage * quantitySausage + 1000000;
+            int consumptionHam = costpriceHam * quantityHam + 1000000;
+            int consumptionScrag = costpriceScrag * quantityScrag + 1000000;
+
+            // Прибыль
+            int profitSausage = incomeSausage - consumptionSausage;
+            int profitHam = incomeHam - consumptionHam;
+            int profitScrag = incomeScrag - consumptionScrag;
+
+
+
+
 
 
             }
