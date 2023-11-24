@@ -104,9 +104,9 @@ package homework.homework1;
             //Ветчины 8511кг
             //Шейки 6988кг
 
-            int quantitySausage = 2000;
-            int quantityHam = 8511;
-            int quantityScrag = 6988;
+            int quantitySausage = 3000;
+            int quantityHam = 7511;
+            int quantityScrag = 5988;
             int valueSausage = 800;
             int costpriceSausage = 0;
             int valueHam = 311;
@@ -122,7 +122,6 @@ package homework.homework1;
             } else if (quantitySausage >= 2000) {
                 costpriceSausage = 404;
             }
-
             //Себестоимость шейки
             if (quantityScrag < 500) {
                 costpriceScrag = 311;
@@ -134,16 +133,13 @@ package homework.homework1;
             int incomeHam = valueHam * quantityHam;
             int incomeScrag = valueScrag * quantityScrag;
             int totalIncome = incomeSausage + incomeHam + incomeScrag;
-            System.out.println(totalIncome);
             // Расход
             int consumptionSausage = costpriceSausage * quantitySausage + 1_000_000;
             int consumptionHam = costpriceHam * quantityHam + 1_000_000;
             int consumptionScrag = costpriceScrag * quantityScrag + 1_000_000;
             int totalConsumption = consumptionSausage + consumptionHam + consumptionScrag;
-            System.out.println(totalConsumption);
             // Прибыль
             int profit = totalIncome - totalConsumption;
-            System.out.println(profit);
             // Налоги
             if (profit > 2_000_000){
                 tax = profit * 13 / 100;
@@ -152,8 +148,13 @@ package homework.homework1;
             } else if (profit < 1_000_000){
                 tax = profit * 8 / 100;
             }
+            //Прибыль после налогов
+            int netProfit = profit - tax;
+            if (profit > 0){
+                System.out.println("Прибыль после налогов: " + netProfit + " рублей" );
+            } else
+                System.out.println("Прибыли нет");
 
-            System.out.println(tax);
 
 
 
