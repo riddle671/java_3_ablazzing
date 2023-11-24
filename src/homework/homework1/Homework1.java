@@ -17,8 +17,15 @@ package homework.homework1;
             //3. Если содержит "ова " то печатаем на экран: Уважаемая {name}
             // Если содержит "ов " то печатаем на экран: Уважаемый {name}
             // В иных случаях печатаем на экран: Неизвестное лицо {name}
+            String name1 = name.trim().toUpperCase();
+            if (name.contains("ова")) {
+                System.out.println("Уважаемая " + name1);
+            } else if (name.contains("ов")){
+                System.out.println("Уважаемый " + name1);
+            } else {
+                System.out.println("Неизвестное лицо " + name1);
+            }
         }
-
         public static void ex2() {
             //У нас есть машина. В данной машине есть есть перечень проверок, перед запуском
             //Количество топлива
