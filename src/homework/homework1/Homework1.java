@@ -113,42 +113,51 @@ package homework.homework1;
             int costpriceHam = 275;
             int valueScrag = 500;
             int costpriceScrag = 0;
-
+            int tax = 0;
             // Себестоимость колбасы
             if (quantitySausage <= 1000) {
                 costpriceSausage = 412;
             } else if (quantitySausage > 1000 && quantitySausage < 2000) {
                 costpriceSausage = 408;
-            } else if (quantitySausage >= 2000){
+            } else if (quantitySausage >= 2000) {
                 costpriceSausage = 404;
             }
 
             //Себестоимость шейки
-            if (quantityScrag < 500){
+            if (quantityScrag < 500) {
                 costpriceScrag = 311;
-            } else if (quantityScrag >= 500){
+            } else if (quantityScrag >= 500) {
                 costpriceScrag = 299;
             }
             // Доход
             int incomeSausage = valueSausage * quantitySausage;
             int incomeHam = valueHam * quantityHam;
             int incomeScrag = valueScrag * quantityScrag;
-
+            int totalIncome = incomeSausage + incomeHam + incomeScrag;
+            System.out.println(totalIncome);
             // Расход
-            int consumptionSausage = costpriceSausage * quantitySausage + 1000000;
-            int consumptionHam = costpriceHam * quantityHam + 1000000;
-            int consumptionScrag = costpriceScrag * quantityScrag + 1000000;
-
+            int consumptionSausage = costpriceSausage * quantitySausage + 1_000_000;
+            int consumptionHam = costpriceHam * quantityHam + 1_000_000;
+            int consumptionScrag = costpriceScrag * quantityScrag + 1_000_000;
+            int totalConsumption = consumptionSausage + consumptionHam + consumptionScrag;
+            System.out.println(totalConsumption);
             // Прибыль
-            int profitSausage = incomeSausage - consumptionSausage;
-            int profitHam = incomeHam - consumptionHam;
-            int profitScrag = incomeScrag - consumptionScrag;
-
-
-
-
-
-
+            int profit = totalIncome - totalConsumption;
+            System.out.println(profit);
+            // Налоги
+            if (profit > 2_000_000){
+                tax = profit * 13 / 100;
+            } else if (profit >= 1_000_000 && profit <= 2_000_000){
+                tax = profit * 10 / 100;
+            } else if (profit < 1_000_000){
+                tax = profit * 8 / 100;
             }
-        }
 
+            System.out.println(tax);
+
+
+
+
+
+        }
+    }
