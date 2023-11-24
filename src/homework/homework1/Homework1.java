@@ -63,9 +63,6 @@ package homework.homework1;
             String simplyReplace = (simply.toLowerCase().replaceAll("this is", "those are"));
             int value = simplyReplace.indexOf('o');
             System.out.println(value);
-
-
-
         }
 
         public static void ex4() {
@@ -105,6 +102,38 @@ package homework.homework1;
             //Колбасы 2000кг
             //Ветчины 8511кг
             //Шейки 6988кг
+
+            int quantitySausage = 1;
+            int quantityHam = 1;
+            int quantityScrag = 1;
+            int valueSausage = 800;
+            int costpriceSausage1000 = 412;
+            int costpriceSausage1000_2000 = 408;
+            int costpriceSausage2000 = 404;
+            int valueHam = 311;
+            int costpriceHam500 = 299;
+            int valueScrag = 500;
+            int costpriceScrag = 311;
+            int costpriceScrag500 = 299;
+            // Доход
+            int incomeSausage = valueSausage * quantitySausage;
+            int incomeHam = valueHam * quantityHam;
+            int incomeScrag = valueScrag * quantityScrag;
+            // Расход
+            int consumptionSausage1000 = costpriceSausage1000 * quantitySausage;
+            int consumptionSausage1000_2000 = costpriceSausage1000_2000 * quantitySausage;
+            int consumptionSausage2000 = costpriceSausage2000 * quantitySausage;
+            //
+            int consumptionHam500 = costpriceHam500 * quantityHam;
+            //
+            int consumptionScrag = costpriceScrag * quantityScrag;
+            int consumptionScrag500 = costpriceScrag500 * quantityScrag;
+            //
+
+
+
+
+
         }
     }
 
