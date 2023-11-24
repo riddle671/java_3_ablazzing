@@ -20,12 +20,13 @@ package homework.homework1;
             String nameReplace = name.trim().toUpperCase();
             if (name.contains("ова")) {
                 System.out.println("Уважаемая " + nameReplace);
-            } else if (name.contains("ов")){
+            } else if (name.contains("ов")) {
                 System.out.println("Уважаемый " + nameReplace);
             } else {
                 System.out.println("Неизвестное лицо " + nameReplace);
             }
         }
+
         public static void ex2() {
             //У нас есть машина. В данной машине есть есть перечень проверок, перед запуском
             //Количество топлива
@@ -45,7 +46,7 @@ package homework.homework1;
             //В ином случае, машина не должна запускаться
             if (
                     fuel >= 10
-                            &&  (isWheelWork1 && isWheelWork2 && isWheelWork3 && isWheelWork4)
+                            && (isWheelWork1 && isWheelWork2 && isWheelWork3 && isWheelWork4)
                             && (!hasErrors)
                             && isEngineWork
             ) {
@@ -107,33 +108,37 @@ package homework.homework1;
             int quantityHam = 1;
             int quantityScrag = 1;
             int valueSausage = 800;
-            int costpriceSausage1000 = 412;
-            int costpriceSausage1000_2000 = 408;
-            int costpriceSausage2000 = 404;
+            int costpriceSausage = 0;
             int valueHam = 311;
-            int costpriceHam500 = 299;
+            int costpriceHam = 275;
             int valueScrag = 500;
-            int costpriceScrag = 311;
-            int costpriceScrag500 = 299;
+            int costpriceScrag = 0;
+
+            // Себестоимость колбасы
+            if (quantitySausage <= 1000) {
+                costpriceSausage = 412;
+            } else if (quantitySausage > 1000 && quantitySausage < 2000) {
+                costpriceSausage = 408;
+            } else if (quantitySausage >= 2000){
+                costpriceSausage = 404;
+            }
+
+            //Себестоимость шейки
+            if (quantityScrag < 500){
+                costpriceScrag = 311;
+            } else if (quantityScrag >= 500){
+                costpriceScrag = 299;
+            }
             // Доход
             int incomeSausage = valueSausage * quantitySausage;
             int incomeHam = valueHam * quantityHam;
             int incomeScrag = valueScrag * quantityScrag;
             // Расход
-            int consumptionSausage1000 = costpriceSausage1000 * quantitySausage;
-            int consumptionSausage1000_2000 = costpriceSausage1000_2000 * quantitySausage;
-            int consumptionSausage2000 = costpriceSausage2000 * quantitySausage;
-            //
-            int consumptionHam500 = costpriceHam500 * quantityHam;
-            //
-            int consumptionScrag = costpriceScrag * quantityScrag;
-            int consumptionScrag500 = costpriceScrag500 * quantityScrag;
-            //
+            int consumptionSausage = costpriceSausage * quantitySausage * 1000000;
+            int consumptionHam = costpriceHam * quantityHam * 1000000;
+            int consumptionScrag = costpriceScrag * quantityScrag * 1000000;
 
 
-
-
-
+            }
         }
-    }
 
