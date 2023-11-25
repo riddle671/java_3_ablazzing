@@ -104,9 +104,9 @@ package homework.homework1;
             //Ветчины 8511кг
             //Шейки 6988кг
 
-            int quantitySausage = 3000;
-            int quantityHam = 7511;
-            int quantityScrag = 5988;
+            int quantitySausage = 2000;
+            int quantityHam = 8511;
+            int quantityScrag = 6988;
             int valueSausage = 800;
             int costpriceSausage = 0;
             int valueHam = 311;
