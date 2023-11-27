@@ -104,12 +104,12 @@ package homework.homework1;
             //Ветчины 8511кг
             //Шейки 6988кг
 
-            int quantitySausage = 5000;
-            int quantityHam = 11511;
-            int quantityScrag = 9988;
+            int quantitySausage = 2000;
+            int quantityHam = 8511;
+            int quantityScrag = 6988;
             int valueSausage = 800;
             int costpriceSausage = 0;
-            int valueHam = 311;
+            int valueHam = 350;
             int costpriceHam = 275;
             int valueScrag = 500;
             int costpriceScrag = 0;
@@ -140,7 +140,6 @@ package homework.homework1;
             int totalConsumption = consumptionSausage + consumptionHam + consumptionScrag;
             // Прибыль
             int profit = totalIncome - totalConsumption;
-            System.out.println(profit);
             // Налоги
             if (profit > 2_000_000){
                 tax = profit * 13 / 100;
