@@ -68,7 +68,6 @@ public class Homework1 {
             String simplyReplace = (simply.toLowerCase().replaceAll("this is", "those are"));
             int value = simplyReplace.indexOf('o');
             System.out.println(value);
-            System.out.println(simplyReplace);
         }
 
         public static void ex4() {
