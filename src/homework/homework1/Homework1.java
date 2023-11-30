@@ -1,6 +1,9 @@
 package homework.homework1;
 
-    public class Homework1 {
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
+public class Homework1 {
         public static void main(String[] args) {
             ex1();
             ex2();
@@ -18,11 +21,12 @@ package homework.homework1;
             // Если содержит "ов " то печатаем на экран: Уважаемый {name}
             // В иных случаях печатаем на экран: Неизвестное лицо {name}
             String nameReplace = name.trim().toUpperCase();
-            if (name.contains("ова")) {
+            if (nameReplace.contains("ОВА")) {
                 System.out.println("Уважаемая " + nameReplace);
-            } else if (name.contains("ов")) {
+            } else if (nameReplace.contains("ОВ")) {
                 System.out.println("Уважаемый " + nameReplace);
             } else {
+                System.out.println(nameReplace);
                 System.out.println("Неизвестное лицо " + nameReplace);
             }
         }
@@ -64,6 +68,7 @@ package homework.homework1;
             String simplyReplace = (simply.toLowerCase().replaceAll("this is", "those are"));
             int value = simplyReplace.indexOf('o');
             System.out.println(value);
+            System.out.println(simplyReplace);
         }
 
         public static void ex4() {
@@ -104,16 +109,15 @@ package homework.homework1;
             //Ветчины 8511кг
             //Шейки 6988кг
 
-            int quantitySausage = 2000;
-            int quantityHam = 8511;
-            int quantityScrag = 6988;
+            int quantitySausage = 6000;
+            int quantityHam = 9511;
+            int quantityScrag = 9988;
             int valueSausage = 800;
             int costpriceSausage = 0;
             int valueHam = 350;
             int costpriceHam = 275;
             int valueScrag = 500;
             int costpriceScrag = 0;
-            int tax = 0;
             // Себестоимость колбасы
             if (quantitySausage <= 1000) {
                 costpriceSausage = 412;
@@ -141,15 +145,28 @@ package homework.homework1;
             // Прибыль
             int profit = totalIncome - totalConsumption;
             // Налоги
-            if (profit > 2_000_000){
-                tax = profit * 13 / 100;
-            } else if (profit >= 1_000_000 && profit <= 2_000_000){
-                tax = profit * 10 / 100;
-            } else if (profit < 1_000_000){
-                tax = profit * 8 / 100;
+            BigDecimal beforeTaxes = new BigDecimal(profit);
+            BigDecimal tax;
+            if (beforeTaxes.compareTo(new BigDecimal(1_000_000)) < 0) {
+                tax = beforeTaxes.multiply(new BigDecimal(0.08));
+            } else if (beforeTaxes.compareTo(new BigDecimal(2_000_000)) < 0) {
+                BigDecimal taxBeforeMillionInclude = new BigDecimal(1_000_000)
+                        .multiply(new BigDecimal(0.08));
+                tax = beforeTaxes.subtract(new BigDecimal(1_000_001))
+                        .multiply(new BigDecimal(0.1))
+                        .add(taxBeforeMillionInclude);
+            } else {
+                BigDecimal taxBeforeMillionInclude = new BigDecimal(1_000_000)
+                        .multiply(new BigDecimal(0.08));
+                BigDecimal taxBeforeMillionOneAndTwoMillionInclude = new BigDecimal(999_999)
+                        .multiply(new BigDecimal(0.1));
+                tax = beforeTaxes.subtract(new BigDecimal(2_000_000))
+                        .multiply(new BigDecimal(0.13))
+                        .add(taxBeforeMillionInclude)
+                        .add(taxBeforeMillionOneAndTwoMillionInclude);
             }
             // Прибыль после налогов
-            int netProfit = profit - tax;
+            int netProfit = profit - tax.intValue();
             if (profit > 0){
                 System.out.println("Прибыль после налогов: " + netProfit + " рублей" );
             } else
