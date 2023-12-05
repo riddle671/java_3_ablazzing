@@ -144,37 +144,24 @@ public class Homework1 {
             // Прибыль
             int profit = totalIncome - totalConsumption;
             // Налоги
-            BigDecimal beforeTaxes = new BigDecimal(profit);
-            BigDecimal tax;
-            if (beforeTaxes.compareTo(new BigDecimal(1_000_000)) < 0) {
-                tax = beforeTaxes.multiply(new BigDecimal(0.08));
-            } else if (beforeTaxes.compareTo(new BigDecimal(2_000_000)) < 0) {
-                BigDecimal taxBeforeMillionInclude = new BigDecimal(1_000_000)
-                        .multiply(new BigDecimal(0.08));
-                tax = beforeTaxes.subtract(new BigDecimal(1_000_001))
-                        .multiply(new BigDecimal(0.1))
-                        .add(taxBeforeMillionInclude);
+            double beforeTaxes = profit;
+            double tax;
+            if (beforeTaxes < 1_000_000){
+                tax = beforeTaxes * 0.08;
+            } else if (beforeTaxes < 2_000_000){
+                double taxBeforeMillionInclude = 1_000_000 * 0.08;
+                tax = (beforeTaxes - 1_000_001) * 0.1 + taxBeforeMillionInclude;
             } else {
-                BigDecimal taxBeforeMillionInclude = new BigDecimal(1_000_000)
-                        .multiply(new BigDecimal(0.08));
-                BigDecimal taxBeforeMillionOneAndTwoMillionInclude = new BigDecimal(999_999)
-                        .multiply(new BigDecimal(0.1));
-                tax = beforeTaxes.subtract(new BigDecimal(2_000_000))
-                        .multiply(new BigDecimal(0.13))
-                        .add(taxBeforeMillionInclude)
-                        .add(taxBeforeMillionOneAndTwoMillionInclude);
+                double taxBeforeMillionInclude = 1_000_000 * 0.08;
+                double taxBeforeMillionOneAndTwoMillionInclude = 999_999 * 0.1;
+                tax = (beforeTaxes - 2_000_000 )* 0.13 + taxBeforeMillionInclude + taxBeforeMillionOneAndTwoMillionInclude;
             }
             // Прибыль после налогов
-            int netProfit = profit - tax.intValue();
+            //int netProfit = profit - tax.intValue();
+            double netProfit = profit - tax;
             if (profit > 0){
                 System.out.println("Прибыль после налогов: " + netProfit + " рублей" );
             } else
                 System.out.println("Прибыли нет");
-
-
-
-
-
-
         }
     }
