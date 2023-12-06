@@ -3,35 +3,21 @@ package shop;
 import java.util.Arrays;
 
 public class Worker {
-    public Worker(String name, int age, boolean gender, int[] veshi) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.veshi = veshi;
-    }
-    @Override
-    public String toString() {
-        return "Worker{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
-                ", veshi=" + Arrays.toString(veshi) +
-                '}';
-    }
     String name;
     int age;
-    boolean gender;
-    int[] veshi;
+    //boolean gender;
+    Item[] veshi;
 
-    public void krik (String name , int fgh[]){
+    public Worker(String name, int age, Item[] veshi) {
         this.name = name;
-        this.veshi = fgh;
-        System.out.println(name + "ghj" + fgh);
-
-
-
+        this.age = age;
+        //this.gender = gender;
+        this.veshi = veshi;
     }
 
-
-
+    public void krik (String name , Item fgh[]){
+        this.name = name;
+        this.veshi = fgh;
+        System.out.println(name + " смотри какая у меня вещь " + fgh);
+    }
 }

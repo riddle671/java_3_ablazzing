@@ -108,9 +108,9 @@ public class Homework1 {
             //Ветчины 8511кг
             //Шейки 6988кг
 
-            int quantitySausage = 6000;
-            int quantityHam = 9511;
-            int quantityScrag = 9988;
+            int quantitySausage = 2000;
+            int quantityHam = 8511;
+            int quantityScrag = 6988;
             int valueSausage = 800;
             int costpriceSausage = 0;
             int valueHam = 350;
@@ -137,10 +137,10 @@ public class Homework1 {
             int incomeScrag = valueScrag * quantityScrag;
             int totalIncome = incomeSausage + incomeHam + incomeScrag;
             // Расход
-            int consumptionSausage = costpriceSausage * quantitySausage + 1_000_000;
-            int consumptionHam = costpriceHam * quantityHam + 1_000_000;
-            int consumptionScrag = costpriceScrag * quantityScrag + 1_000_000;
-            int totalConsumption = consumptionSausage + consumptionHam + consumptionScrag;
+            int consumptionSausage = costpriceSausage * quantitySausage;
+            int consumptionHam = costpriceHam * quantityHam;
+            int consumptionScrag = costpriceScrag * quantityScrag;
+            int totalConsumption = consumptionSausage + consumptionHam + consumptionScrag + 1_000_000;
             // Прибыль
             int profit = totalIncome - totalConsumption;
             // Налоги
