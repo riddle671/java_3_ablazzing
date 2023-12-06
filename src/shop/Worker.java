@@ -1,22 +1,19 @@
 package shop;
-
 import java.util.Arrays;
-
 public class Worker {
     String name;
     int age;
-    //boolean gender;
+    String gender;
     Item[] veshi;
 
-    public Worker(String name, int age, Item[] veshi) {
+    public Worker(String name, int age, String gender, Item[] veshi) {
         this.name = name;
         this.age = age;
-        //this.gender = gender;
+        this.gender = gender;
         this.veshi = veshi;
     }
-    public void krik (String name , Item items[]){
-        this.name = name;
-        this.veshi = items;
-        System.out.println(name + " смотри какая у меня вещь " + items);
+    public void krik (String name, Item items[]){
+        for (Item ghj : items)
+        System.out.println(name + " смотри какая у меня вещь " + ghj);
     }
 }

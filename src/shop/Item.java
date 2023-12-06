@@ -9,4 +9,20 @@ public class Item {
         this.name = name;
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return name;
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
