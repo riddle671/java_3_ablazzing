@@ -14,9 +14,9 @@ public class Worker {
         //this.gender = gender;
         this.veshi = veshi;
     }
-    public void krik (String name , Item fgh[]){
+    public void krik (String name , Item items[]){
         this.name = name;
-        this.veshi = fgh;
-        System.out.println(name + " смотри какая у меня вещь " + fgh);
+        this.veshi = items;
+        System.out.println(name + " смотри какая у меня вещь " + items);
     }
 }
