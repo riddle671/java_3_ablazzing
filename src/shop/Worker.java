@@ -14,7 +14,6 @@ public class Worker {
         //this.gender = gender;
         this.veshi = veshi;
     }
-
     public void krik (String name , Item fgh[]){
         this.name = name;
         this.veshi = fgh;
