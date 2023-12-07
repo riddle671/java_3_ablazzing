@@ -46,6 +46,7 @@ public class Homework2 {
             numbers[numbers.length - i - 1] = temp;
         }
         System.out.println(Arrays.toString(numbers));
+
         // Задание 3
         //Дан распределитель случайных чисел
         //Random random = new Random(1);
