@@ -15,6 +15,7 @@ public class Runner {
         Worker[] workmax = {worker1, worker2};
         Shop hui = new Shop(workmax);
         worker1.boasting(worker1.name, setThings2);
+        worker2.boasting(worker2.name, setThings1);
 
 
 
