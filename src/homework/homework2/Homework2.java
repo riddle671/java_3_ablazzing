@@ -41,9 +41,9 @@ public class Homework2 {
         //"перевернуть" - значит последние элементы становятся первыми и наоборот.
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         for (int i = 0; i < numbers.length / 2; i++) {
-            int tmp = numbers[i];
+            int temp = numbers[i];
             numbers[i] = numbers[numbers.length - i - 1];
-            numbers[numbers.length - i - 1] = tmp;
+            numbers[numbers.length - i - 1] = temp;
         }
         System.out.println(Arrays.toString(numbers));
         // Задание 3

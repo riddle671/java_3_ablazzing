@@ -12,7 +12,7 @@ public class Worker {
         this.gender = gender;
         this.listThings = listThings;
     }
-    @Override
+
     public String toString() {
         return name + ": " + age + " лет, " + gender + ", список вещей: " + Arrays.toString(listThings);
     }

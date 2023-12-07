@@ -13,12 +13,8 @@ public class Runner {
         Worker worker1 = new Worker("Василий", 30, "мужчина", setThings1 );
         Worker worker2 = new Worker("Марьяна", 25, "женщина", setThings2 );
         Worker[] workmax = {worker1, worker2};
-        Shop hui = new Shop(workmax);
+        Shop workShop = new Shop(workmax);
         worker1.boasting(worker1.name, setThings2);
         worker2.boasting(worker2.name, setThings1);
-
-
-
-
     }
 }
