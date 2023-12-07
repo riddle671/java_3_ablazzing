@@ -18,12 +18,10 @@ public class Runner {
         Worker[] workmax = {worker1, worker2};
 
         Shop hui = new Shop(workmax);
-        //System.out.println(hui.toString());
-
-        worker1.krik(worker1.name, setThings2);
+        //System.out.println(hui);
 
 
-
+        //worker1.boasting(worker1.name, setThings2);
 
 
 

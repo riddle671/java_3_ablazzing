@@ -8,6 +8,7 @@ public class Item {
     public Item(String name, double weight) {
         this.name = name;
         this.weight = weight;
+
     }
 
     @Override
