@@ -1,4 +1,4 @@
-package shop;
+package homework.homework2.shop;
 import java.util.Arrays;
 public class Worker {
     String name;

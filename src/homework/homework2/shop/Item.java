@@ -1,4 +1,4 @@
-package shop;
+package homework.homework2.shop;
 
 public class Item {
 
