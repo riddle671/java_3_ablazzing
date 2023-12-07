@@ -13,8 +13,8 @@ public class Test2 {
             numbers[i] = numbers[numbers.length - i - 1];
             numbers[numbers.length - i - 1] = tmp;
         }
-        //System.out.println(Arrays.toString(numbers));
-       // System.out.println(tmp);
+        System.out.println(Arrays.toString(numbers));
+        System.out.println();
 
 
 
