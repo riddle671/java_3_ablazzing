@@ -1,6 +1,7 @@
 package homework.homework2.shop;
 
 public class Runner {
+
     public static void main(String[] args) {
         Item Hammer = new Item("молоток", 1000);
         Item Screwdriver = new Item("отвертка", 50);

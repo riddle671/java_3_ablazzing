@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class Homework2 {
     public static void main(String[] args) {
+
         // Задание 1
         //Дан массив с массивом чисел внутри
         //Посчитать сумму каждой диагонали используя цикл(ы)
@@ -35,7 +36,6 @@ public class Homework2 {
         System.out.println("Сумма главной диагонали: " + leftUpToRightDownSum);
         System.out.println("Сумма побочной диагонали: " +leftDownToRightUpSum);
 
-
         // Задание 2
         //Перевернуть массив(без сторонних классов), не создавая новый массив. Вывести на экран.
         //"перевернуть" - значит последние элементы становятся первыми и наоборот.
@@ -63,7 +63,5 @@ public class Homework2 {
                 count++;
             }
             System.out.println("Попытка № " + count);
-
         }
-
 }
