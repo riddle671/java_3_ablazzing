@@ -9,6 +9,7 @@ public class Item {
         this.name = name;
         this.weight = weight;
     }
+
     public String toString() {
         return name;
     }

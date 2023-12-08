@@ -16,8 +16,6 @@ public class Test2 {
         System.out.println(Arrays.toString(numbers));
         System.out.println();
 
-
-
             // Узнать как работает
        /* int[] numbers2 = new int[numbers.length];
         //System.out.println(numbers2.length);
@@ -26,7 +24,6 @@ public class Test2 {
                 numbers2[j] = numbers[i];
                 i--;
                 //System.out.println(Arrays.toString(numbers));
-
             }
             System.out.println(Arrays.toString(numbers2));
         }*/

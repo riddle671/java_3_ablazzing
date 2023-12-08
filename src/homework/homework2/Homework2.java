@@ -27,14 +27,17 @@ public class Homework2 {
         arrayOfNumbers[9] = new int[]{10, 2, 3, 4, 5, 6, 7, 8, 9, 101};
         int leftUpToRightDownSum = 0;
         int leftDownToRightUpSum = 0;
-        for(int i = 0; i < arrayOfNumbers.length; i++) {
+        for (int i = 0; i < arrayOfNumbers.length; i++) {
             leftUpToRightDownSum = leftUpToRightDownSum + arrayOfNumbers[i][i];
         }
-        for (int i = 9; i < arrayOfNumbers.length && i > -1 ; i--) {
-            leftDownToRightUpSum = leftDownToRightUpSum + arrayOfNumbers[i][arrayOfNumbers.length - i - 1];
+        for (int i = 9; i < arrayOfNumbers.length && i > -1; i--) {
+            leftDownToRightUpSum = leftDownToRightUpSum
+                    + arrayOfNumbers[i][arrayOfNumbers.length - i - 1];
         }
+
+
         System.out.println("Сумма главной диагонали: " + leftUpToRightDownSum);
-        System.out.println("Сумма побочной диагонали: " +leftDownToRightUpSum);
+        System.out.println("Сумма побочной диагонали: " + leftDownToRightUpSum);
 
         // Задание 2
         //Перевернуть массив(без сторонних классов), не создавая новый массив. Вывести на экран.
@@ -53,15 +56,16 @@ public class Homework2 {
         //Получение случайного числа
         //int number = random.nextInt(1000);
         //Написать код, генерирующий случайные числа до тех пор, пока не сгенерируется 999.
-        //Вывести номер попытки, с которой получилось получить случайным образом число 999.
-            Random random = new Random();
-            int number = 0;
-            int count = 0;
-            while (number != 999){
-                int guess = random.nextInt(1000);
-                number = guess;
-                count++;
-            }
-            System.out.println("Попытка № " + count);
+        // Вывести номер попытки, с которой получилось получить случайным образом число 999.
+
+        Random random = new Random();
+        int number = 0;
+        int count = 0;
+        while (number != 999) {
+            int guess = random.nextInt(1000);
+            number = guess;
+            count++;
         }
+        System.out.println("Попытка № " + count);
+    }
 }

@@ -1,5 +1,7 @@
 package homework.homework2.shop;
+
 import java.util.Arrays;
+
 public class Worker {
     String name;
     int age;
@@ -14,10 +16,15 @@ public class Worker {
     }
 
     public String toString() {
-        return name + ": " + age + " лет, " + gender + ", список вещей: " + Arrays.toString(listThings);
+        return name + ": "
+                + age + " лет, "
+                + gender + ", список вещей: "
+                + Arrays.toString(listThings);
     }
-    public void boasting (String name, Item items[]){
-        for (Item count : items)
-        System.out.println(name + " смотри какая у меня вещь " + count);
+
+    public void boasting (String name, Item items[]) {
+        for (Item count : items) {
+            System.out.println(name + " смотри какая у меня вещь " + count);
+        }
     }
 }
