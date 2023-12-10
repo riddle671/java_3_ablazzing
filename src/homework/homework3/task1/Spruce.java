@@ -4,7 +4,7 @@ public class Spruce extends Conifers {
 
 
 
-    public Spruce(int age, String needleType) {
+    public Spruce(int age, boolean needleType) {
         super(age, needleType);
 
 

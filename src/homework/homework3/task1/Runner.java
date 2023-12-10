@@ -1,6 +1,6 @@
 package homework.homework3.task1;
 
-public abstract class  Runner {
+public class  Runner {
 
     public static void main(String[] args) {
         Tree pine1 = new Pine(10, true);
