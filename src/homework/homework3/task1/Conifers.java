@@ -4,9 +4,9 @@ public class Conifers extends Tree {
 
     protected String needleType;
 
-    public Conifers(String needleType) {
+    public Conifers(int age, String needleType) {
+        super(age);
         this.needleType = needleType;
     }
-
 }
 
