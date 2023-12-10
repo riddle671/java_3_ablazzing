@@ -1,7 +1,7 @@
 package homework.homework3.task1;
 
 public class Birch extends Deciduous {
-    public Birch(int age, boolean thereareLeaves) {
+    protected Birch(int age, boolean thereareLeaves) {
         super(age, thereareLeaves);
     }
 
