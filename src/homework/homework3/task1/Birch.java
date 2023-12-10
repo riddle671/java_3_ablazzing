@@ -5,17 +5,15 @@ public class Birch extends Deciduous {
         super(age, thereareLeaves);
     }
 
-
-
-    protected void presenceofLeaves() {
-        if (presenceofLeaves == true) {
-            System.out.println("листья опадают с березы");
-        }  else {
-            System.out.println("листья появляются на березе и она источает аллергены");
+    protected void leavesFall() {
+        if (presenceofLeaves) {
+            System.out.println("листья пропадают с березы");
         }
     }
 
-
-
-
+    protected void leavesBloom() {
+        if (presenceofLeaves) {
+            System.out.println("листья появляются на березе и она источает аллергены");
+        }
+    }
 }

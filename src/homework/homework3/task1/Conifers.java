@@ -7,6 +7,19 @@ public class Conifers extends Tree {
     public Conifers(int age, boolean needleType) {
         super(age);
         this.needleType = needleType;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
-

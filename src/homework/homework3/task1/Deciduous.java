@@ -1,21 +1,22 @@
 package homework.homework3.task1;
 
 public class Deciduous extends Tree {
+    protected boolean presenceofLeaves;
 
-   protected boolean presenceofLeaves;
+    public Deciduous(int age, boolean thereareLeaves) {
 
-   public Deciduous(int age, boolean thereareLeaves) {
+        super(age);
+        this.presenceofLeaves = thereareLeaves;
+    }
 
-      super(age);
-      this.presenceofLeaves = thereareLeaves;
-   }
-
-   protected void presenceofLeaves() {
-      if (presenceofLeaves == true) {
-         System.out.println("листья опадают с дерева");
-      }  else {
-         System.out.println("листья появляются на дереве");
-   }
-
-   }
+    protected void leavesFall() {
+        if (presenceofLeaves) {
+            System.out.println("листья пропадают с дерева");
+        }
+    }
+    protected void leavesBloom() {
+        if (presenceofLeaves) {
+            System.out.println("листья появляются");
+        }
+    }
 }
