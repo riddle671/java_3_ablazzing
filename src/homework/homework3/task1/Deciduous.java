@@ -1,6 +1,6 @@
 package homework.homework3.task1;
 
-public class Deciduous extends Tree {
+public abstract class Deciduous extends Tree {
     protected boolean presenceofLeaves;
 
     protected Deciduous(int age, boolean thereareLeaves) {
