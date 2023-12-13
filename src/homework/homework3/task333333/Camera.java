@@ -9,4 +9,9 @@ public class Camera extends Phone  {
         this.zoom = zoom;
         this.flash = flash;
     }
+
+    @Override
+    public String toString() {
+        return ",Camera zoom: " + zoom + ", Camera flash: " + flash;
+    }
 }
