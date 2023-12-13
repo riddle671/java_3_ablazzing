@@ -9,12 +9,13 @@ public class Runner {
         MotherBoard motherBoardIphone = new MotherBoard("7uik", "15х12х13");
         Camera cameraSamsung = new Camera("20x", false);
         Camera cameraIphone = new Camera("15x", true);
-        factory.assemblingSamsung(galaxy, "Android", motherBoardSamsung, cameraSamsung);
         MotherBoard[] motherboards = new MotherBoard[]{motherBoardIphone, motherBoardSamsung};
         for (MotherBoard motherboard : motherboards) {
-            factory.assemblingSamsung(galaxy, "Android", motherboard, cameraSamsung);
-            factory.assemblingSamsung(model15, "Ios", motherboard, cameraIphone);
+            //factory.assemblingSamsung(galaxy, "Android", motherboard, cameraSamsung);
+            //factory.assemblingSamsung(model15, "Ios", motherboard, cameraIphone);
         }
+        factory.assemblingSamsung(galaxy, "Android", motherBoardSamsung, cameraSamsung);
+        factory.assemblingSamsung(model15, "Ios", motherBoardIphone, cameraIphone);
 
 
     }
