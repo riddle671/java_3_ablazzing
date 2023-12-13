@@ -4,17 +4,23 @@ public class Samsung extends Phone {
     protected String model;
     protected String os;
     protected Motherboard motherboard;
-    protected String camera;
+
 
     public Samsung(String model) {
         this.model = model;
     }
 
     @Override
-    public void assemblingSamsung(Samsung model, String os, Motherboard motherboard, String camera) {
+    public void assemblingSamsung(Samsung model, String os, Motherboard motherboard, Camera camera) {
         super.assemblingSamsung(model, os, motherboard, camera);
         this.os = os;
         this.motherboard = motherboard;
-        this.camera = camera;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Samsung{" +
+                "model='" + model;
     }
 }

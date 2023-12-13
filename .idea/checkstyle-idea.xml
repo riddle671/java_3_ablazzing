@@ -6,14 +6,14 @@
     <copyLibs>true</copyLibs>
     <option name="thirdPartyClasspath" />
     <option name="activeLocationIds">
-      <option value="d3198e9f-47ae-43d8-bd8b-0691d508789e" />
+      <option value="663448ae-8bc2-45a7-98ff-02956aa9cb7b" />
     </option>
     <option name="locations">
       <list>
         <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
         <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
         <ConfigurationLocation id="d3198e9f-47ae-43d8-bd8b-0691d508789e" type="LOCAL_FILE" scope="All" description="hyhghh">
-          $PROJECT_DIR$/../../Program Files/JetBrains/google_checks_1_2.xml
+          $USER_HOME$/Program Files/JetBrains/google_checks_1_2.xml
           <option name="properties">
             <map>
               <entry key="org.checkstyle.google.suppressionxpathfilter.config" value="" />
@@ -21,7 +21,15 @@
           </option>
         </ConfigurationLocation>
         <ConfigurationLocation id="464bbdce-c5b6-41d0-a54d-697eac431a34" type="LOCAL_FILE" scope="All" description="java-core">
-          $PROJECT_DIR$/../../Program Files/JetBrains/google_checks.xml
+          $USER_HOME$/Program Files/JetBrains/google_checks.xml
+          <option name="properties">
+            <map>
+              <entry key="org.checkstyle.google.suppressionxpathfilter.config" value="" />
+            </map>
+          </option>
+        </ConfigurationLocation>
+        <ConfigurationLocation id="663448ae-8bc2-45a7-98ff-02956aa9cb7b" type="LOCAL_FILE" scope="All" description="java-core-3">
+          $PROJECT_DIR$/../../../../Program Files/JetBrains/google_checks.xml
           <option name="properties">
             <map>
               <entry key="org.checkstyle.google.suppressionxpathfilter.config" value="" />
