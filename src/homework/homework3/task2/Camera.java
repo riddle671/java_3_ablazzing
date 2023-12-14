@@ -1,6 +1,6 @@
-package homework.homework3.task333333;
+package homework.homework3.task2;
 
-public class Camera extends Phone  {
+public class Camera {
 
     private String zoom;
     private boolean flash;

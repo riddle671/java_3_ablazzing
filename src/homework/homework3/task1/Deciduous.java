@@ -4,19 +4,14 @@ public abstract class Deciduous extends Tree {
     protected boolean presenceofLeaves;
 
     protected Deciduous(int age, boolean thereareLeaves) {
-
         super(age);
         this.presenceofLeaves = thereareLeaves;
     }
 
-    protected void leavesFall() {
+    public void blossom() {
         if (presenceofLeaves) {
             System.out.println("листья пропадают с дерева");
-        }
-    }
-
-    protected void leavesBloom() {
-        if (presenceofLeaves) {
+        } else {
             System.out.println("листья появляются");
         }
     }

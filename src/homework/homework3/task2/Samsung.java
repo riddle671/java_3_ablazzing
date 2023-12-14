@@ -1,4 +1,4 @@
-package homework.homework3.task333333;
+package homework.homework3.task2;
 
 public class Samsung extends Phone {
 
