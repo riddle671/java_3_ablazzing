@@ -2,8 +2,6 @@ package homework.homework3.task333333;
 
 public class Iphone extends Phone {
     protected String model;
-    protected String os;
-
 
 
     public Iphone(String model) {
@@ -11,17 +9,18 @@ public class Iphone extends Phone {
     }
 
     @Override
-    public void assemblingSamsung(Iphone model, String os, MotherBoard motherboard, Camera camera) {
-        super.assemblingSamsung(model, os, motherboard, camera);
-        this.os = os;
-
+    public void assemblingSamsung(Iphone model, OperatingSystem operatingSystem, MotherBoard motherboard, Camera camera) {
+        super.assemblingSamsung(model, operatingSystem, motherboard, camera);
 
     }
 
     @Override
     public String toString() {
-        return "Iphone{" +
-                "os='" + os + '\'' +
-                '}';
+        return "Iphone " + model + ",";
+
     }
+
+
+
+
 }

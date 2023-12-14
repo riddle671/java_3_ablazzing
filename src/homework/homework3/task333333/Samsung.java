@@ -2,7 +2,6 @@ package homework.homework3.task333333;
 
 public class Samsung extends Phone {
     protected String model;
-    protected String os;
 
 
     public Samsung(String model) {
@@ -10,9 +9,9 @@ public class Samsung extends Phone {
     }
 
     @Override
-    public void assemblingSamsung(Samsung model, String os, MotherBoard motherboard, Camera camera) {
-        super.assemblingSamsung(model, os, motherboard, camera);
-        this.os = os;
+    public void assemblingSamsung(Samsung model, OperatingSystem operatingSystem, MotherBoard motherBoard, Camera camera) {
+        super.assemblingSamsung(model, operatingSystem, motherBoard, camera);
+
 
     }
 
