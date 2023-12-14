@@ -2,8 +2,8 @@ package homework.homework3.task2;
 
 public class Camera {
 
-    private String zoom;
-    private boolean flash;
+    private final String zoom;
+    private final boolean flash;
 
     public Camera(String zoom, boolean flash) {
         this.zoom = zoom;

@@ -2,7 +2,7 @@ package homework.homework3;
 
 import homework.homework3.task1.*;
 import homework.homework3.task2.*;
-
+import homework.homework3.task3.*;
 
 public class Homework3 {
     public static void main(String[] args) {
@@ -59,15 +59,15 @@ public class Homework3 {
 
         Iphone iphone15 = new Iphone("15");
         Samsung samsungGalaxy = new Samsung("galaxy");
-        OperatingSystem operatingSystemSamsung = new OperatingSystem("Android");
-        OperatingSystem operatingSystemIphone = new OperatingSystem("IOS");
+        OperationSystems operationSystemsSamsung = new OperationSystems("Android");
+        OperationSystems operationSystemsIphone = new OperationSystems("IOS");
         MotherBoard motherBoardSamsungGalaxy = new MotherBoard("j-108", 10, 12, 13);
         MotherBoard motherBoardIphone15 = new MotherBoard("7uik", 15, 12, 13);
         Camera cameraSamsung = new Camera("20x", false);
         Camera cameraIphone = new Camera("15x", true);
         PhoneFactory factory = new PhoneFactory();
-        factory.assemblingPhone(samsungGalaxy, operatingSystemSamsung, motherBoardSamsungGalaxy, cameraSamsung);
-        factory.assemblingPhone(iphone15, operatingSystemIphone, motherBoardIphone15, cameraIphone);
+        factory.assemblingPhone(samsungGalaxy, operationSystemsSamsung, motherBoardSamsungGalaxy, cameraSamsung);
+        factory.assemblingPhone(iphone15, operationSystemsIphone, motherBoardIphone15, cameraIphone);
     }
 
     public static void ex3() {
@@ -90,8 +90,10 @@ public class Homework3 {
 
         //при вызове pyramid3.print выведется:
         // MMM
-
         //создать здесь pyramid1 и вызвать print
+
+        Piramid1 piramid1 = new Piramid1();
+        piramid1.print();
     }
 
     public static void ex4() {

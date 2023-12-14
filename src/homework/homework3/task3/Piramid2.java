@@ -5,6 +5,5 @@ public class Piramid2 extends Piramid3 {
     public void print() {
         System.out.println("ММ");
         super.print();
-
     }
 }
