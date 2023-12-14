@@ -2,7 +2,7 @@ package homework.homework3.task333333;
 
 public class OperatingSystem {
 
-    String osName;
+    private String osName;
 
     public OperatingSystem(String osName) {
         this.osName = osName;
