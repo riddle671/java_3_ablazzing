@@ -1,17 +1,21 @@
 package homework.homework3.task2;
 
-public class Camera {
+public abstract class Camera {
 
-    private final String zoom;
-    private final boolean flash;
+    protected String zoom;
 
-    public Camera(String zoom, boolean flash) {
+    public Camera(String zoom) {
         this.zoom = zoom;
-        this.flash = flash;
+    }
+
+    public String getZoom() {
+        return zoom;
     }
 
     @Override
     public String toString() {
-        return "Camera zoom: " + zoom + ", Camera flash: " + flash;
+        return "Camera{" +
+                "zoom='" + zoom + '\'' +
+                '}';
     }
 }

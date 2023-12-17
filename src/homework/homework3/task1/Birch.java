@@ -10,7 +10,7 @@ public class Birch extends Deciduous {
     @Override
     public void blossom() {
         if (presenceofLeaves) {
-            System.out.println("листья пропадают с дерева");
+            System.out.println("листья пропадают с березы");
         } else {
             System.out.println("листья появляются на березе и она источает аллергены");
         }

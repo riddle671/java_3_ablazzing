@@ -1,14 +1,19 @@
 package homework.homework3.task2;
 
-public abstract class Phone extends PhoneFactory {
+public class Phone {
 
-    @Override
+    Iphone iph;
+
+    public Iphone getIph() {
+        return iph;
+    }
+    /*  @Override
     public void assemblingPhone(Samsung model, OperationSystems os, MotherBoard mb, Camera camera) {
-        super.assemblingPhone(model, os, mb, camera);
+        this.samsung = samsung;
     }
 
     @Override
     public void assemblingPhone(Iphone model, OperationSystems os, MotherBoard mb, Camera camera) {
-        super.assemblingPhone(model, os, mb, camera);
-    }
+        this.iphone = model;
+    }*/
 }

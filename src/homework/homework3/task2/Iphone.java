@@ -1,16 +1,15 @@
 package homework.homework3.task2;
 
-public class Iphone extends Phone {
+public class Iphone {
 
-    private final String model;
+    private String model;
 
     public Iphone(String model) {
         this.model = model;
     }
 
-    @Override
-    public void assemblingPhone(Iphone model, OperationSystems os, MotherBoard mb, Camera camera) {
-        super.assemblingPhone(model, os, mb, camera);
+    public String getModel() {
+        return model;
     }
 
     @Override

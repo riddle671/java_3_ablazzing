@@ -9,11 +9,6 @@ public class Samsung extends Phone {
     }
 
     @Override
-    public void assemblingPhone(Samsung model, OperationSystems os, MotherBoard mb, Camera camera) {
-        super.assemblingPhone(model, os, mb, camera);
-    }
-
-    @Override
     public String toString() {
         return "Samsung " + model + ",";
     }
