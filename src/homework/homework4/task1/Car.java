@@ -2,12 +2,11 @@ package homework.homework4.task1;
 
 public abstract class Car {
 
-    boolean chist;
-    int width;
-    int height;
-    int length;
-    Car krupn;
-    Car melk;
+    private boolean chist;
+    private int width;
+    private int height;
+    private int length;
+
 
     public Car(boolean chist, int shirin, int height, int length) {
         this.chist = chist;
@@ -15,8 +14,6 @@ public abstract class Car {
         this.height = height;
         this.length = length;
     }
-
-
 
     public boolean isChist() {
         return chist;
@@ -26,12 +23,12 @@ public abstract class Car {
         this.chist = chist;
     }
 
-    public int getShirin() {
+    public int getWidth() {
         return width;
     }
 
-    public void setShirin(int shirin) {
-        this.width = shirin;
+    public void setWidth(int width) {
+        this.width = width;
     }
 
     public int getHeight() {
@@ -46,7 +43,10 @@ public abstract class Car {
         return length;
     }
 
-    public void setGlubin(int dlin) {
-        this.length = dlin;
+    public void setLength(int length) {
+        this.length = length;
     }
 }
+
+
+
