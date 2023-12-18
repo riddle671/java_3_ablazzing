@@ -15,8 +15,8 @@ public class CarWash {
         int sum = 0;
         int taxAuto = 4000;
         int taxBus = 2000;
-        for (Car carlength : car) {
-            if (carlength.getLength() > 6 || carlength.getHeight() > 2.5 || carlength.getWidth() > 2) {
+        for (Car cars : car) {
+            if (cars.getLength() > 6 || cars.getHeight() > 2.5 || cars.getWidth() > 2) {
                 return sum += taxBus;
             } else {
                 return sum += taxAuto;
