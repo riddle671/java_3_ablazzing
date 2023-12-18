@@ -3,16 +3,20 @@ package homework.homework4.task1;
 public class Runner {
     public static void main(String[] args) {
         CarWash carWash1 = new CarWash();
-        Car car = new Bus(false, 1, 1, 1, 20);
-        Car car2 = new Bus(false, 8, 1, 1, 20);
-        Car car3 = new Bus(false, 8, 1, 1, 20);
-        Car[] cars = new Car[] {car, car2, car3};
-        carWash1.wash(car);
+        Car passengeCar1 = new PassengeCar(false, 5, 2, 1.8, true);
+        Car passengeCar2 = new PassengeCar(false, 5, 2, 1.8, true);
+        Car passengeCar3 = new PassengeCar(false, 5, 2, 1.8, true);
+        Car passengeCar4 = new PassengeCar(false, 5, 2, 1.8, true);
+        Car bus1 = new Bus(false, 12, 3, 2.3, 20);
+        Car bus2 = new Bus(false, 12, 3, 2.3, 20);
+        Car bus3 = new Bus(false, 12, 3, 2.3, 20);
+        Car bus4 = new Bus(false, 12, 3, 2.3, 20);
+        Car bus5 = new Bus(false, 12, 3, 2.3, 20);
+        Car[] cars = new Car[] {passengeCar1, passengeCar2, passengeCar3, passengeCar4, bus1, bus2, bus3, bus4, bus5};
+        carWash1.wash(passengeCar1);
         System.out.println(carWash1.getCostWash());
         carWash1.wash(cars);
         System.out.println(carWash1.getCostWash());
-
-
 
 
 

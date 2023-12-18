@@ -4,8 +4,9 @@ public class Bus extends Car {
 
     private int countPassagers;
 
-    public Bus(boolean chist, int shirin, int visot, int glubin, int countPassagers) {
-        super(chist, shirin, visot, glubin);
+
+    public Bus(boolean clean, double width, double height, double length, int countPassagers) {
+        super(clean, width, height, length);
         this.countPassagers = countPassagers;
     }
 }

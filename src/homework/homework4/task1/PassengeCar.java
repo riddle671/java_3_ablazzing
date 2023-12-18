@@ -4,9 +4,8 @@ public  class PassengeCar extends Car {
 
     private boolean cruiseControl;
 
-    public PassengeCar(boolean chist, int shirin, int visot, int glubin, boolean cruiseControl) {
-        super(chist, shirin, visot, glubin);
+    public PassengeCar(boolean clean, double width, double height, double length, boolean cruiseControl) {
+        super(clean, width, height, length);
         this.cruiseControl = cruiseControl;
     }
-
 }

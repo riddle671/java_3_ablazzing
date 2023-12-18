@@ -2,16 +2,16 @@ package homework.homework4.task1;
 
 public class CarWash {
 
-    int costWash;
-    int taxAuto = 2000;
-    int taxBus = 4000;
+    private int costWash;
+    private int taxAuto = 2000;
+    private int taxBus = 4000;
 
     public int getCostWash() {
         return costWash;
     }
 
     public int wash(Car  car) {
-        car.setChist(true);
+        car.setClean(true);
         if (car.getLength() > 6 || car.getHeight() > 2.5 || car.getWidth() > 2) {
             return costWash += taxBus;
         } else {

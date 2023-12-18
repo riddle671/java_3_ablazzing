@@ -2,48 +2,48 @@ package homework.homework4.task1;
 
 public abstract class Car {
 
-    private boolean chist;
-    private int width;
-    private int height;
-    private int length;
+    private boolean clean;
+    private double width;
+    private double height;
+    private double length;
 
 
-    public Car(boolean chist, int shirin, int height, int length) {
-        this.chist = chist;
-        this.width = shirin;
+    public Car(boolean clean, double width, double height, double length) {
+        this.clean = clean;
+        this.width = width;
         this.height = height;
         this.length = length;
     }
 
-    public boolean isChist() {
-        return chist;
+    public boolean isClean() {
+        return clean;
     }
 
-    public void setChist(boolean chist) {
-        this.chist = chist;
+    public void setClean(boolean clean) {
+        this.clean = clean;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public int getLength() {
+    public double getLength() {
         return length;
     }
 
-    public void setLength(int length) {
+    public void setLength(double length) {
         this.length = length;
     }
 }
