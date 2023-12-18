@@ -10,7 +10,7 @@ public class CarWash {
         return costWash;
     }
 
-    public int moika(Car  car) {
+    public int wash(Car  car) {
         car.setChist(true);
         if (car.getLength() > 6 || car.getHeight() > 2.5 || car.getWidth() > 2) {
             return costWash += taxBus;
@@ -19,7 +19,7 @@ public class CarWash {
         }
     }
 
-    public int moika2(Car[]  car) {
+    public int wash(Car[]  car) {
         for (Car cars : car) {
             if (cars.getLength() > 6 || cars.getHeight() > 2.5 || cars.getWidth() > 2) {
                 return costWash += taxBus;

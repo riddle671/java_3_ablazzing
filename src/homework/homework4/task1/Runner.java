@@ -7,9 +7,9 @@ public class Runner {
         Car car2 = new Bus(false, 8, 1, 1, 20);
         Car car3 = new Bus(false, 8, 1, 1, 20);
         Car[] cars = new Car[] {car, car2, car3};
-        carWash1.moika(car);
+        carWash1.wash(car);
         System.out.println(carWash1.getCostWash());
-        carWash1.moika2(cars);
+        carWash1.wash(cars);
         System.out.println(carWash1.getCostWash());
 
 
