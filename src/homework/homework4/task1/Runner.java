@@ -1,6 +1,14 @@
 package homework.homework4.task1;
 
 public class Runner {
+
+    public void ggg(){
+        for (int i = 0; i < 4; i++) {
+            new PassengeCar(true,1,2,3,true);
+
+        }
+
+    }
     public static void main(String[] args) {
         CarWash carWash1 = new CarWash();
         Car passengeCar1 = new PassengeCar(false, 1.8, 2, 5,true);
@@ -16,9 +24,13 @@ public class Runner {
         //carWash1.wash(passengeCar1);
         //System.out.println(carWash1.getCostWash());
         carWash1.wash(cars);
-        System.out.println(carWash1.getCostWash());
+        System.out.println("Мэрия заплатит: " + carWash1.getCostWash());
+        Runner runner1 = new Runner();
+
+        runner1.ggg();
 
 
 
     }
 }
+

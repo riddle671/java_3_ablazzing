@@ -22,6 +22,7 @@ public class CarWash {
 
     public int wash(Car[]  car) {
         for (Car cars : car) {
+            cars.setClean(true);
             if (cars.getLength() > 6 || cars.getHeight() > 2.5 || cars.getWidth() > 2) {
                  costWash += taxBus;
             } else {
@@ -31,5 +32,10 @@ public class CarWash {
         return costWash;
     }
 
-
+    @Override
+    public String toString() {
+        return "CarWash{" +
+                "costWash=" + costWash +
+                '}';
+    }
 }
