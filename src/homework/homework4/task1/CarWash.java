@@ -13,21 +13,23 @@ public class CarWash {
     public int wash(Car  car) {
         car.setClean(true);
         if (car.getLength() > 6 || car.getHeight() > 2.5 || car.getWidth() > 2) {
-            return costWash += taxBus;
+             costWash += taxBus;
         } else {
-            return costWash += taxAuto;
+             costWash += taxAuto;
         }
+        return costWash;
     }
 
     public int wash(Car[]  car) {
         for (Car cars : car) {
             if (cars.getLength() > 6 || cars.getHeight() > 2.5 || cars.getWidth() > 2) {
-                return costWash += taxBus;
+                 costWash += taxBus;
             } else {
-                return costWash += taxAuto;
+                 costWash += taxAuto;
             }
         }
         return costWash;
     }
+
 
 }

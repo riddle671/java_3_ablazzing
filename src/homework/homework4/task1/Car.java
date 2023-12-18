@@ -7,7 +7,6 @@ public abstract class Car {
     private double height;
     private double length;
 
-
     public Car(boolean clean, double width, double height, double length) {
         this.clean = clean;
         this.width = width;
