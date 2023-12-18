@@ -2,24 +2,24 @@ package homework.homework4.task1;
 
 public class Carmoik {
 
-
     public int moika(Car  car) {
         car.setChist(true);
         if (car.length > 6 || car.height > 2.5 || car.width > 2) {
             return 4000;
-        } else
+        } else {
             return 2000;
+        }
     }
 
     public int moika2(Car[]  car) {
         int sum = 0;
-        int gruz = 4000;
-        int legk = 2000;
+        int taxAuto = 4000;
+        int taxBus = 2000;
         for (Car carlength : car) {
             if (carlength.length > 6 || carlength.height > 2.5 || carlength.width > 2) {
-                return sum += gruz;
+                return sum += taxBus;
             } else {
-                return sum += legk;
+                return sum += taxAuto;
             }
         }
         return sum;
