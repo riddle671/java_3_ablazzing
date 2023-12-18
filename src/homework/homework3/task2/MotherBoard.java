@@ -3,20 +3,20 @@ package homework.homework3.task2;
 public class MotherBoard  {
 
     private final String name;
-    private final int widthBoard;
-    private final int heightBoard;
-    private final int lengthBoard;
+    private final int width;
+    private final int height;
+    private final int length;
 
     public MotherBoard(String name, int widthBoard, int hightBoard, int lengthBoard) {
         this.name = name;
-        this.widthBoard = widthBoard;
-        this.heightBoard = hightBoard;
-        this.lengthBoard = lengthBoard;
+        this.width = widthBoard;
+        this.height = hightBoard;
+        this.length = lengthBoard;
     }
 
     @Override
     public String toString() {
         return "Motherboard name: " + name + ", Motherboard size: "
-                + widthBoard + "x" + heightBoard + "x" + lengthBoard + ",";
+                + width + "x" + height + "x" + length + ",";
     }
 }

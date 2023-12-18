@@ -36,7 +36,7 @@ public class Homework3 {
         for (Tree tree : trees) {
             averageAge += tree.getAge();
         }
-        System.out.println("ср.Возраст " + averageAge / trees.length);
+        System.out.println("ср.Возраст " + averageAge / 3);
     }
 
     public static void ex2() {
@@ -57,14 +57,14 @@ public class Homework3 {
         //один будет собирать iphone, второй будет собирать samsung.
         //В данном методе создать два телефона, собрать их, распечатать.
 
-        /*Iphone iphone15 = new Iphone("15");
+        Iphone iphone15 = new Iphone("15");
         Samsung samsungGalaxy = new Samsung("galaxy");
         OperationSystems operationSystemsSamsung = new OperationSystems("Android");
         OperationSystems operationSystemsIphone = new OperationSystems("IOS");
         MotherBoard motherBoardSamsungGalaxy = new MotherBoard("j-108", 10, 12, 13);
         MotherBoard motherBoardIphone15 = new MotherBoard("7uik", 15, 12, 13);
-        Camera cameraSamsung = new Camera("20x", false);
-        Camera cameraIphone = new Camera("15x", true);*/
+        //Camera cameraSamsung = new Camera("20x", false);
+        //Camera cameraIphone = new Camera("15x", true);
         //PhoneFactory factory = new PhoneFactory();
         //factory.assemblingPhone(samsungGalaxy, operationSystemsSamsung, motherBoardSamsungGalaxy, cameraSamsung);
         //factory.assemblingPhone(iphone15, operationSystemsIphone, motherBoardIphone15, cameraIphone);

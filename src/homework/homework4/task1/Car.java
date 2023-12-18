@@ -3,16 +3,20 @@ package homework.homework4.task1;
 public abstract class Car {
 
     boolean chist;
-    int shirin;
-    int visot;
-    int dlin;
+    int width;
+    int height;
+    int length;
+    Car krupn;
+    Car melk;
 
-    public Car(boolean chist, int shirin, int visot, int dlin) {
+    public Car(boolean chist, int shirin, int height, int length) {
         this.chist = chist;
-        this.shirin = shirin;
-        this.visot = visot;
-        this.dlin = dlin;
+        this.width = shirin;
+        this.height = height;
+        this.length = length;
     }
+
+
 
     public boolean isChist() {
         return chist;
@@ -23,26 +27,26 @@ public abstract class Car {
     }
 
     public int getShirin() {
-        return shirin;
+        return width;
     }
 
     public void setShirin(int shirin) {
-        this.shirin = shirin;
+        this.width = shirin;
     }
 
-    public int getVisot() {
-        return visot;
+    public int getHeight() {
+        return height;
     }
 
-    public void setVisot(int visot) {
-        this.visot = visot;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
-    public int getDlin() {
-        return dlin;
+    public int getLength() {
+        return length;
     }
 
     public void setGlubin(int dlin) {
-        this.dlin = dlin;
+        this.length = dlin;
     }
 }
