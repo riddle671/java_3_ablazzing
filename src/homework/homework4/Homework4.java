@@ -29,7 +29,6 @@ public class Homework4 {
         //Посчитать, сколько мэрия заплатит денег за мойку машин.
 
         CarWash carWash1 = new CarWash();
-
         Car passengeCar1 = new Passenger(false, 1.8, 2, 5, true);
         Car passengeCar2 = new Passenger(false, 1.8, 2, 5, true);
         Car passengeCar3 = new Passenger(false, 1.8, 2, 5, true);
@@ -76,9 +75,7 @@ public class Homework4 {
                 flyable.fly();
             } catch (Flyexeption flyexeption) {
                 System.out.println(flyexeption.getMessage());
-
             }
-
         }
     }
 
@@ -95,9 +92,7 @@ public class Homework4 {
         Speakable[] speakable = {new Man(), new Builder(), new Driver(), new Bird()};
         for (Speakable speaker : speakable) {
             System.out.println(speaker.speak());
-
         }
-
     }
 
     public static void ex4() {
