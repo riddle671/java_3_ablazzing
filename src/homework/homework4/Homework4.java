@@ -39,7 +39,7 @@ public class Homework4 {
         Car bus4 = new Bus(false, 2.3, 3, 12, 20);
         Car bus5 = new Bus(false, 2.3, 3, 12, 20);
         Car[] cars = new Car[] {passengeCar1, passengeCar2, passengeCar3, passengeCar4, bus1, bus2, bus3, bus4, bus5};
-        carWash1.wash(cars);
+        carWash1.wash1(cars);
         System.out.println("Мэрия заплатит: " + carWash1.getCostWash());
     }
 
