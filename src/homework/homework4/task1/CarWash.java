@@ -22,7 +22,7 @@ public class CarWash {
         return costWash;
     }
 
-    public int wash1(Car[] car) {
+    public int wash(Car[] car) {
         for (Car cars : car) {
             this.wash(cars);
         }
