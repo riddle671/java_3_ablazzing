@@ -2,7 +2,7 @@ package homework.homework4.task2;
 
 public class Airplene implements Flyable {
 
-    int countPassengers;
+    private int countPassengers;
 
     public Airplene(int countPassengers) {
         this.countPassengers = countPassengers;

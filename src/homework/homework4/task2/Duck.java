@@ -2,7 +2,7 @@ package homework.homework4.task2;
 
 public class Duck implements Flyable {
 
-    boolean isInjured;
+    private boolean isInjured;
 
     public Duck(boolean isInjured) {
         this.isInjured = isInjured;
