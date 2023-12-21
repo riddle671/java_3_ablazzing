@@ -11,7 +11,7 @@ public class Airplene implements Flyable {
     @Override
     public void fly() throws Flyexeption {
         if (countPassengers < 0) {
-            throw new Flyexeption();
+            throw new Flyexeption("Ошибка: пассажиров в самолете меньше 0");
         }
         System.out.println("Самолет летит");
     }

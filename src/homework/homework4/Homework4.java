@@ -1,7 +1,15 @@
 package homework.homework4;
 
+import homework.homework4.task1.*;
+import homework.homework4.task2.*;
+import homework.homework4.task3.*;
+
+
 public class Homework4 {
     public static void main(String[] args) {
+        ex1();
+        ex2();
+        ex3();
 
     }
 
@@ -19,6 +27,21 @@ public class Homework4 {
         //В автомойку были отправлены грязные машины мэрии: 4 легковых(длина высота ширина) (5х2х1.8),
         //5 автобусов(12х3х2.3)
         //Посчитать, сколько мэрия заплатит денег за мойку машин.
+
+        CarWash carWash1 = new CarWash();
+
+        Car passengeCar1 = new Passenger(false, 1.8, 2, 5, true);
+        Car passengeCar2 = new Passenger(false, 1.8, 2, 5, true);
+        Car passengeCar3 = new Passenger(false, 1.8, 2, 5, true);
+        Car passengeCar4 = new Passenger(false, 1.8, 2, 5, true);
+        Car bus1 = new Bus(false, 2.3, 3, 12, 20);
+        Car bus2 = new Bus(false, 2.3, 3, 12, 20);
+        Car bus3 = new Bus(false, 2.3, 3, 12, 20);
+        Car bus4 = new Bus(false, 2.3, 3, 12, 20);
+        Car bus5 = new Bus(false, 2.3, 3, 12, 20);
+        Car[] cars = new Car[] {passengeCar1, passengeCar2, passengeCar3, passengeCar4, bus1, bus2, bus3, bus4, bus5};
+        carWash1.wash(cars);
+        System.out.println("Мэрия заплатит: " + carWash1.getCostWash());
     }
 
     public static void ex2() {
@@ -42,6 +65,21 @@ public class Homework4 {
         // Ошибка: утка ранена
         // самолет летит
         // Ошибка: пассажиров в самолете меньше 0
+
+        Flyable duck1 = new Duck(false);
+        Flyable duck2 = new Duck(true);
+        Flyable airplene1 = new Airplene(10);
+        Flyable airplene2 = new Airplene(-1);
+        Flyable[] flyables = {duck1, duck2, airplene1, airplene2};
+        for (Flyable flyable : flyables) {
+            try {
+                flyable.fly();
+            } catch (Flyexeption flyexeption) {
+                System.out.println(flyexeption.getMessage());
+
+            }
+
+        }
     }
 
     public static void ex3() {
@@ -53,6 +91,13 @@ public class Homework4 {
         //Сделать так, чтобы они все могли быть представлены к единому типу.
         //Создать в этом методе человека, строителя, водителя и птицу. Заставить их издать звуки.
         //Изданные звуки распечатать.
+
+        Speakable[] speakable = {new Man(), new Builder(), new Driver(), new Bird()};
+        for (Speakable speaker : speakable) {
+            System.out.println(speaker.speak());
+
+        }
+
     }
 
     public static void ex4() {
